@@ -5,7 +5,7 @@ import 'package:kiyomi/components/header.dart';
 
 
 class DownloadScreen extends StatelessWidget {
-  final String gameUrl = 'https://kiyomibykiyoufu.netlify.app/';
+  final String gameUrl = 'https://kiyomibykyoufu.netlify.app/';
 
   @override
   Widget build(BuildContext context) {
@@ -41,7 +41,7 @@ class DownloadScreen extends StatelessWidget {
               // Botón para redirigir a la web
               ElevatedButton(
                 onPressed: () async {
-                  final Uri url = Uri.parse('https://kiyomibykiyoufu.netlify.app');
+                  final Uri url = Uri.parse('https://kiyomibykyoufu.netlify.app/');
                   if (await canLaunchUrl(url)) {
                     await launchUrl(url);
                   } else {
