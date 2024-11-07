@@ -117,7 +117,7 @@ class _IndexState extends State<_Index> {
                 height: 1.5,
               ),
             ),
-            const SizedBox(height: 20),
+            const SizedBox(height: 40),
           ],
         ),
       ),

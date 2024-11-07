@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import '/styles/colors.dart';
-import '/main.dart';
 import '/download_screen.dart';
 import '/gallery_screen.dart';
 import '/ranking_screen.dart';
@@ -18,6 +17,9 @@ class CustomAppBar extends StatelessWidget implements PreferredSizeWidget {
           color: Colors.white,
           fontWeight: FontWeight.bold,
         ),
+      ),
+      iconTheme: const IconThemeData(
+        color: Colors.white,
       ),
       actions: [
         PopupMenuButton<String>(
