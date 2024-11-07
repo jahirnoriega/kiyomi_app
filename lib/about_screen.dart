@@ -74,9 +74,9 @@ class AboutScreen extends StatelessWidget {
 
               // Descripción
               const Text(
-                'Somos Kyoufu Studios, un equipo de estudiantes de la Universidad Tecnológica de Chihuahua apasionados por crear experiencias de terror inmersivas y profundas. '
-                    'Nuestro estudio nació con el deseo de explorar las sombras y las complejidades de la mente humana a través de la narrativa y la atmósfera. '
-                    'En Kyoufu Studios, creemos que el terror psicológico tiene un poder único para conectar con las emociones más profundas del jugador.',
+                'We are Kyoufu Studios, a team of students from the Technological University of Chihuahua passionate about creating immersive and deep horror experiences. '
+                    'Our studio was born from the desire to explore the shadows and complexities of the human mind through narrative and atmosphere. '
+                    'At Kyoufu Studios, we believe that psychological horror has a unique power to connect with the player\'s deepest emotions.',
                 style: TextStyle(
                   color: AppColors.text,
                   fontSize: 16,
@@ -97,12 +97,11 @@ class AboutScreen extends StatelessWidget {
                 ),
               ),
               const SizedBox(height: 16),
-
               // Segundo párrafo de texto
               const Text(
-                'Para nuestro primer proyecto, estamos desarrollando un juego de terror psicológico en Unity que cuenta la historia de dos hermanas y los secretos oscuros de su pasado. '
-                    'Cada miembro del equipo aporta habilidades únicas en programación, diseño y narrativa, usando herramientas como Blender para la creación de ambientes inmersivos y detallados. '
-                    'Nuestro objetivo es construir un mundo que no solo asuste, sino que también cuente una historia profunda y provocadora, explorando la línea entre el miedo y la realidad.',
+                'For our first project, we are developing a psychological horror game in Unity that tells the story of two sisters and the dark secrets of their past. '
+                    'Each team member brings unique skills in programming, design, and storytelling, using tools like Blender to create immersive and detailed environments. '
+                    'Our goal is to build a world that not only scares but also tells a deep and thought-provoking story, exploring the line between fear and reality.',
                 style: TextStyle(
                   color: AppColors.text,
                   fontSize: 16,

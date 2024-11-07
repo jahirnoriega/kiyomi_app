@@ -1,12 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:kiyomi/components/header.dart';
+import 'package:flutter/services.dart'; 
 import 'download_screen.dart';
+import 'package:kiyomi/components/header.dart';
 import 'gallery_screen.dart';
 import 'ranking_screen.dart';
 import 'about_screen.dart';
 import 'styles/colors.dart';
 
-void main() => runApp(const Kiyomi());
+void main() {
+  WidgetsFlutterBinding.ensureInitialized();
+  SystemChrome.setPreferredOrientations([
+    DeviceOrientation.portraitUp,
+    DeviceOrientation.portraitDown,
+  ]).then((_) {
+    runApp(const Kiyomi());
+  });
+}
 
 class Kiyomi extends StatelessWidget {
   const Kiyomi({super.key});
@@ -98,7 +107,7 @@ class _IndexState extends State<_Index> {
                 borderRadius: BorderRadius.circular(8.0),
               ),
               child: const Text(
-                '"Kiyomi logra sumergir al jugador en una atmósfera oscura, donde cada rincón de la escuela abandonada revela secretos perturbadores y misterios sin resolver."',
+                '"Kiyomi manages to immerse the player in a dark atmosphere, where every corner of the abandoned school reveals disturbing secrets and unresolved mysteries."',
                 style: TextStyle(
                   color: AppColors.text,
                   fontStyle: FontStyle.italic,
@@ -109,8 +118,8 @@ class _IndexState extends State<_Index> {
             ),
             const SizedBox(height: 16),
             const Text(
-              'Kiyomi era conocida por su belleza y carisma, admirada por todos en la escuela. Sin embargo, su hermana menor, Kyuju, siempre vivió a su sombra, cargando con una profunda envidia que lentamente se transformó en resentimiento. Un día, ocurrió un trágico suceso que cambiaría sus vidas para siempre. Kiyomi fue brutalmente atacada, quedando gravemente herida, y murió bajo el árbol que ambas hermanas solían visitar en el patio de la escuela. \n\n'
-                  "Años después, la escuela ha quedado en ruinas, envuelta en leyendas oscuras sobre la presencia de Kiyomi, cuyo espíritu atormentado deambula por los pasillos en busca de algo o alguien. Kyuju regresa al lugar donde todo comenzó, cargando con una culpa que no la deja en paz, mientras busca una forma de redimirse o escapar de su inevitable destino.",
+              'Kiyomi was known for her beauty and charisma, admired by everyone at school. However, her younger sister, Kyuju, always lived in her shadow, harboring a deep envy that slowly transformed into resentment. One day, a tragic event occurred that would change their lives forever. Kiyomi was brutally attacked, left gravely injured, and died beneath the tree the two sisters used to visit in the schoolyard. \n\n'
+                  "Years later, the school remains in ruins, shrouded in dark legends about Kiyomi's presence, whose tormented spirit roams the hallways in search of something or someone. Kyuju returns to the place where it all began, burdened with a guilt that gives her no peace, as she searches for a way to find redemption or escape her inevitable fate.",
               style: TextStyle(
                 color: AppColors.text,
                 fontSize: 16,

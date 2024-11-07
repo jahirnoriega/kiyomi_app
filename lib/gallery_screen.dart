@@ -9,6 +9,10 @@ class GalleryScreen extends StatelessWidget {
     'images/conference.jpeg',
     'images/school.jpeg',
     'images/class_board.jpeg',
+    'images/class2.jpeg',
+    'images/entry.jpeg',
+    'images/hall.jpeg',
+    'images/messy_room.jpeg',
   ];
 
   @override
@@ -93,7 +97,7 @@ class FullScreenImage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black.withOpacity(0.8), // Fondo oscuro
+      backgroundColor: Colors.black.withOpacity(0.9), // Fondo oscuro
       body: Stack(
         children: [
           Center(
